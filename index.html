@@ -1,11 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的个人网站</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 全局样式 */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #74ebd5, #acb6e5); 
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* 容器样式 */
+        .container {
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        /* 标题样式 */
+        h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* 段落样式 */
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* GitHub 链接按钮 */
+        .github-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #24292e; 
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .github-btn:hover {
+            background-color: #4078c0; 
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 16px;
+            }
+            .github-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎来到我的网站！</h1>
-    <p>这是一个用 GitHub Pages 免费托管的网站。</p>
+    <div class="container">
+        <header>
+            <h1>欢迎来到我的个人网站！</h1>
+        </header>
+        <section>
+            <p>这里感谢GitHub为我提供免费服务，本人在此宣布：Google最强，我爱Google。</p>
+            <p>我的 GitHub 仓库地址：
+                <a href="https://github.com/w1hiwillbetop?tab=repositories" target="_blank" class="github-btn">访问我的 GitHub</a>
+            </p>
+        </section>
+    </div>
 </body>
 </html>
